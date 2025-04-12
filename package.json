@@ -1,0 +1,30 @@
+{
+  "name": "testrail-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc && npx @modelcontextprotocol/inspector dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usira-okay/testrail-mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usira-okay/testrail-mcp/issues"
+  },
+  "homepage": "https://github.com/usira-okay/testrail-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
