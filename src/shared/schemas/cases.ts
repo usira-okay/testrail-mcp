@@ -4,7 +4,17 @@ export const getCaseSchema = z.object({
   caseId: z.number().describe('The ID of the test case'),
 });
 
-export type TestRailCase = z.infer<typeof TestRailCaseSchema>;
+// Schema for retrieving all test cases in a project
+export const getTestCasesSchema = z.object({
+  projectId: z.number().describe("TestRail Project ID"),
+  suiteId: z.number().describe("TestRail Suite ID"),
+});
+
+export const getTestCaseInputSchema = getCaseSchema;
+export const getTestCasesInputSchema = getTestCasesSchema;
+
+export type GetTestCaseInput = z.infer<typeof getCaseSchema>;
+export type GetTestCasesInput = z.infer<typeof getTestCasesInputSchema>;
 
 export const TestRailCaseSchema = z.object({
   id: z.number(),
@@ -30,6 +40,4 @@ export const TestRailCaseSchema = z.object({
   custom_expected: z.string().nullable().optional(),
 });
 
-export const getTestCaseInputSchema = getCaseSchema;
-
-export type GetTestCaseInput = z.infer<typeof getCaseSchema>;
+export type TestRailCase = z.infer<typeof TestRailCaseSchema>;
