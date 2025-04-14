@@ -1,9 +1,9 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { registCaseTool } from './cases';
-import { registProjectTool } from './projects';
-import { registSuiteTool } from './suites';
-import { TestRailClient } from "../../client/api";
-import { TestRailClientConfig } from "../../client/api/baseClient";
+import { registCaseTool } from './cases.js';
+import { registProjectTool } from './projects.js';
+import { registSuiteTool } from './suites.js';
+import { TestRailClient } from "../../client/api/index.js";
+import { TestRailClientConfig } from "../../client/api/baseClient.js";
 
 export function registAllTools(
   mcpServer: McpServer,

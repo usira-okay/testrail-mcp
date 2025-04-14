@@ -1,6 +1,6 @@
 import { AxiosResponse } from "axios";
-import { BaseTestRailClient } from "./baseClient";
-import { GetSuiteInput, GetSuitesInput, TestRailSuite } from "../../shared/schemas/suites";
+import { BaseTestRailClient } from "./baseClient.js";
+import { GetSuiteInput, GetSuitesInput, TestRailSuite } from "../../shared/schemas/suites.js";
 
 export class SuitesClient extends BaseTestRailClient {
   async getSuite(suiteId: GetSuiteInput["suiteId"]): Promise<TestRailSuite> {

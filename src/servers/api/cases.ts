@@ -1,6 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { getCaseSchema, getTestCasesSchema } from '../../shared/schemas/cases';
-import { TestRailClient } from "../../client/api/index";
+import { getCaseSchema, getTestCasesSchema } from '../../shared/schemas/cases.js';
+import { TestRailClient } from "../../client/api/index.js";
 
 export function registCaseTool(
   mcpServer: McpServer,

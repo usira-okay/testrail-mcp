@@ -1,6 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { TestRailClient } from "../../client/api";
-import { getProjectSchema } from "../../shared/schemas/projects";
+import { TestRailClient } from "../../client/api/index.js";
+import { getProjectSchema } from "../../shared/schemas/projects.js";
 
 export function registProjectTool(
   mcpServer: McpServer,

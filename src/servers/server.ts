@@ -1,14 +1,14 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import config from "../../config.json";
+import config from "../../config.json" with { type: "json" };
 import { registAllTools } from "./api/index.js";
 import { Command } from 'commander'
-import { TestRailClientConfig } from "../client/api/baseClient";
+import { TestRailClientConfig } from "../client/api/baseClient.js";
 
 export const run = async () => {
   const server = new McpServer({
-    name: config.name,
-    version: config.version
+    name: 'testrail-ro-mcp',
+    version: '0.0.1'
   });
 
   const program = new Command();

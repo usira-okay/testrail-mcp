@@ -1,5 +1,5 @@
-import { TestRailProject } from "../../shared/schemas/projects";
-import { BaseTestRailClient } from "./baseClient";
+import { TestRailProject } from "../../shared/schemas/projects.js";
+import { BaseTestRailClient } from "./baseClient.js";
 
 export class ProjectsClient extends BaseTestRailClient {
   async getProjects(): Promise<TestRailProject[]> {

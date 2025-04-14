@@ -1,6 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { TestRailClient } from "../../client/api";
-import { getSuiteSchema } from "../../shared/schemas/suites";
+import { TestRailClient } from "../../client/api/index.js";
+import { getSuiteSchema } from "../../shared/schemas/suites.js";
 
 export function registSuiteTool(
   mcpServer: McpServer,
